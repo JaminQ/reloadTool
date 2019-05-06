@@ -1,0 +1,84 @@
+* {
+  font-family: "Microsoft Yahei";
+}
+
+body {
+  width: 180px;
+  height: 82px;
+  margin-bottom: 16px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  margin: 8px 0;
+  text-align: center;
+
+  h1 {
+    margin: 0;
+    font-weight: 100;
+    font-size: 15px;
+  }
+
+  #reload-input {
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 5px;
+    font-size: 13px;
+    border: 0;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    transition: all .2s ease-in-out;
+    outline: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+    &:hover, &:focus {
+      border-color: rgb(177, 177, 177);
+    }
+  }
+
+  button {
+    height: 30px;
+    padding: 0 8px;
+    font-size: 13px;
+    border: 0;
+    color: #FFF;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    outline: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    &#start-btn {
+      background: #55b5f5;
+
+      &:hover {
+        background: #6fc2fa;
+      }
+    }
+
+    &#stop-btn {
+      background: #f55959;
+
+      &:hover {
+        background: #ff7272;
+      }
+    }
+  }
+
+  &#error-text {
+    font-size: 12px;
+    color: #f55959;
+  }
+
+  &#reload-times {
+    font-size: 12px;
+  }
+}

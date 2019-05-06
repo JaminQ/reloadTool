@@ -1,0 +1,20 @@
+{
+  "name": "金华专用",
+  "version": "1.0",
+  "description": "啥都别说了，金华，用起来吧！",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "manifest_version": 2,
+  "author": "jaminqian"
+}
